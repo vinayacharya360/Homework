@@ -31,10 +31,10 @@ async function solveHomework(){
     if(file) formData.append('file',file);
 
     try{
-        const res = await fetch('https://plain-fire-b3a3.vinayacharya360.workers.dev',{
-            method:'POST',
-            body:formData
-        });
+        const res = await fetch('https://plain-fire-b3a3.vinayacharya360.workers.dev', {
+  method: 'POST',
+  body: formData
+});
         const data=await res.json();
         resultBox.innerHTML=data.answer||'No answer returned';
     }catch(err){
