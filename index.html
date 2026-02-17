@@ -31,7 +31,7 @@ async function solveHomework(){
     if(file) formData.append('file',file);
 
     try{
-        const res=await fetch('/api/solve',{
+        const res = await fetch('https://plain-fire-b3a3.vinayacharya360.workers.dev',{
             method:'POST',
             body:formData
         });
